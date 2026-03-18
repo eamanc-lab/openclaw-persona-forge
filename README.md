@@ -4,6 +4,12 @@ English | [中文](README.zh.md)
 
 Forge a lobster with a soul — a one-stop persona generator for your OpenClaw AI Agent.
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/adam-claw-logo.png" width="360" alt="Adam — The Lobster Creator God" />
+  <br/>
+  <em>Example: Adam — The Lobster Creator God, forged by this skill</em>
+</p>
+
 ## What It Does
 
 Generates a complete OpenClaw lobster persona in one go:

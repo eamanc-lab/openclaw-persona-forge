@@ -4,6 +4,12 @@
 
 为你的 OpenClaw AI Agent 锻造一只有灵魂的龙虾。
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/adam-claw-logo.png" width="360" alt="亚当（Adam）—— 龙虾族创世神" />
+  <br/>
+  <em>示例：亚当（Adam）—— 龙虾族创世神，由本 Skill 锻造</em>
+</p>
+
 ## 它能做什么
 
 一站式生成完整的 OpenClaw 龙虾人设方案：

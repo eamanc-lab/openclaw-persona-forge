@@ -3,6 +3,13 @@
 所有龙虾头像**必须使用统一的视觉风格**，确保龙虾家族的风格一致性。
 头像需传达 3 个信息：**物种形态 + 性格暗示 + 标志道具**
 
+## 风格参考
+
+亚当（Adam）—— 龙虾族创世神，本 Skill 的首个作品：
+![Adam](https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/adam-claw-logo.png)
+
+所有新生成的龙虾头像应与此风格保持一致。
+
 ## 统一风格基底（STYLE_BASE）
 
 **每次生成都必须包含这段基底**，不得修改或省略：
