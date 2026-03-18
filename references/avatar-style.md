@@ -71,22 +71,32 @@ The key silhouette recognition points at small size are:
 [SIGNATURE_PROP] and [one other distinctive feature].
 ```
 
-## 自动生图
+## 生图流程
 
-提示词组装完成后，自动执行：
+提示词组装完成后：
+
+### 路径 A：已安装 baoyu-image-gen skill
 
 1. 用 Write 工具写入：`/tmp/openclaw-[龙虾名字]-prompt.md`
-2. 用 Bash 执行内置生图引擎：
-   ```bash
-   npx -y bun ${SKILL_DIR}/scripts/main.ts \
-     --promptfiles /tmp/openclaw-[龙虾名字]-prompt.md \
-     --image [当前工作目录]/[龙虾名字]-avatar.png \
-     --provider google \
-     --ar 1:1 \
-     --quality 2k
-   ```
+2. 调用 `baoyu-image-gen` skill 生成图片
 3. 用 Read 工具展示生成的图片给用户
 4. 问用户是否满意，不满意可调整变量重新生成
+
+### 路径 B：未安装 baoyu-image-gen skill
+
+输出完整提示词文本，附手动使用说明：
+
+```markdown
+**头像提示词**（可复制到以下平台手动生成）：
+- Google Gemini：直接粘贴
+- ChatGPT（DALL-E）：直接粘贴
+- Midjourney：粘贴后加 `--ar 1:1 --style raw`
+
+> [完整英文提示词]
+
+💡 安装 baoyu-image-gen skill 可获得自动生图能力：
+https://github.com/JimLiu/baoyu-skills
+```
 
 ## 展示给用户的格式
 
@@ -102,7 +112,7 @@ The key silhouette recognition points at small size are:
 - 能量条标签：[ENERGY_BAR_LABEL]
 
 **生成结果**：
-[直接展示图片]
+[图片（路径A）或提示词文本（路径B）]
 
 > 满意吗？不满意我可以调整 [具体可调项] 后重新生成。
 ```
