@@ -2,8 +2,8 @@
 name: openclaw-persona-forge
 description: |-
   为 OpenClaw AI Agent 生成完整的龙虾人设方案。根据用户偏好或随机抽卡，
-  输出身份定位、灵魂描述(SOUL.md)、角色化底线规则、名字和头像。
-  内置 AI 生图能力（Google Gemini / OpenAI / DashScope），自动生成统一风格头像。
+  输出身份定位、灵魂描述(SOUL.md)、角色化底线规则、名字和头像生图提示词。
+  如已安装 baoyu-image-gen skill，可自动生成统一风格头像图片。
   当用户需要创建、设计或定制 OpenClaw 龙虾角色人设时使用。
   不适用于：微调已有 SOUL.md、非 OpenClaw 平台的角色设计、纯工具型无性格 Agent。
   触发词：龙虾人设、OpenClaw 人设、养虾人设、龙虾角色、龙虾定位、
@@ -11,7 +11,7 @@ description: |-
 license: MIT
 metadata:
   author: eamanc
-  version: 1.0.0
+  version: 2.0.0
 compatibility:
   platforms:
     - claude-code
@@ -26,42 +26,32 @@ compatibility:
 
 **Agent Execution**:
 1. Determine this SKILL.md file's directory path as `SKILL_DIR`
-2. Script path = `${SKILL_DIR}/scripts/main.ts`
-3. Replace all `${SKILL_DIR}` in this document with the actual path
+2. Replace all `${SKILL_DIR}` in this document with the actual path
 
 ## 内置工具
 
-### 1. 抽卡引擎
+### 抽卡引擎（gacha.py）
 
 - **路径**：`${SKILL_DIR}/gacha.py`
 - **调用**：`python3 ${SKILL_DIR}/gacha.py [次数]`（默认 1 次，最多 5 次）
+- **作用**：从 800 万种组合中真随机生成龙虾人设方向
 
-### 2. AI 生图引擎
+## 可选依赖
 
-- **路径**：`${SKILL_DIR}/scripts/main.ts`
-- **调用**：
-  ```bash
-  npx -y bun ${SKILL_DIR}/scripts/main.ts \
-    --promptfiles [提示词文件] --image [输出路径] \
-    --provider google --ar 1:1 --quality 2k
-  ```
-- **支持**：google（默认）、openai、dashscope
-- **配置**：见 `${SKILL_DIR}/references/config/preferences-schema.md`
+### 头像自动生图：baoyu-image-gen skill
 
-### API Key 配置
+本 Skill 的核心输出是**文本方案**（SOUL.md + IDENTITY.md + 头像提示词）。
+头像图片生成是**可选增强能力**，由 `baoyu-image-gen` skill 提供。
 
-至少配一个：
+**判断逻辑**：
+- 如果用户已安装 `baoyu-image-gen` skill → Step 5 中调用它自动生图
+- 如果未安装 → Step 5 输出完整的提示词文本，用户可复制到 Gemini / ChatGPT / Midjourney 手动生成
 
-| Provider | 环境变量 | 获取地址 |
-|----------|---------|---------|
-| Google Gemini（推荐） | `GOOGLE_API_KEY` 或 `GEMINI_API_KEY` | [Google AI Studio](https://aistudio.google.com/apikey) |
-| OpenAI | `OPENAI_API_KEY` | [OpenAI Platform](https://platform.openai.com/api-keys) |
-| 阿里云通义万象 | `DASHSCOPE_API_KEY` | [阿里云 DashScope](https://dashscope.console.aliyun.com/apiKey) |
+**调用方式**（仅在已安装时）：
+1. 将提示词写入临时文件 `/tmp/openclaw-[龙虾名字]-prompt.md`
+2. 使用 Skill 工具调用 `baoyu-image-gen`，传入提示词文件和输出路径
 
-```bash
-# 最快配置（用户级，所有项目生效）
-mkdir -p ~/.baoyu-skills && echo 'GOOGLE_API_KEY=your-key-here' > ~/.baoyu-skills/.env
-```
+> 安装 baoyu-image-gen：[https://github.com/JimLiu/baoyu-skills](https://github.com/JimLiu/baoyu-skills)
 
 ---
 
@@ -151,17 +141,31 @@ python3 ${SKILL_DIR}/gacha.py [次数]
 
 **风格基底、变量、提示词模板**：见 [references/avatar-style.md](references/avatar-style.md)
 
-自动执行流程：
-1. 填充 7 个个性化变量
-2. 拼接 STYLE_BASE + 个性化描述
-3. 写入临时文件 → 调用生图引擎 → 展示结果
-4. 问用户满不满意
+### 流程
+
+1. 根据人设填充 7 个个性化变量
+2. 拼接 STYLE_BASE + 个性化描述为完整提示词
+3. **检查 baoyu-image-gen skill 是否可用**：
+   - **可用** → 写入临时文件，调用 baoyu-image-gen 生成图片，展示结果，问用户满不满意
+   - **不可用** → 输出完整提示词文本，附使用说明：
+
+```markdown
+**头像提示词**（可复制到以下平台手动生成）：
+- Google Gemini：直接粘贴
+- ChatGPT（DALL-E）：直接粘贴
+- Midjourney：粘贴后加 `--ar 1:1 --style raw`
+
+> [完整英文提示词]
+
+💡 安装 baoyu-image-gen skill 可获得自动生图能力：
+https://github.com/JimLiu/baoyu-skills
+```
 
 ## Step 6：输出完整方案
 
 **完整输出模板**：见 [references/output-template.md](references/output-template.md)
 
-整合所有步骤为一份完整的龙虾人设方案：SOUL.md + IDENTITY.md + 头像。
+整合所有步骤为一份完整的龙虾人设方案：SOUL.md + IDENTITY.md + 头像（图片或提示词）。
 
 ---
 
@@ -173,10 +177,9 @@ python3 ${SKILL_DIR}/gacha.py [次数]
 
 | 故障 | 降级行为 |
 |------|---------|
-| Python 不可用 | 跳过 gacha.py，从 10 个预设中随机选 |
-| Node.js / bun 不可用 | 跳过生图，输出提示词文本供手动使用 |
-| API Key 未配置 | 跳过生图，输出提示词 + 配置指引 |
-| API 调用失败 | 重试 1 次，仍失败则输出提示词文本 |
+| Python 不可用 | 跳过 gacha.py，从 10 类预设中随机选 |
+| baoyu-image-gen 未安装 | 输出提示词文本供手动使用 |
+| baoyu-image-gen 生图失败 | 重试 1 次，仍失败则输出提示词文本 |
 | 任何未预期错误 | 记录错误，跳过该步骤，继续主流程 |
 
 错误信息统一格式：
@@ -223,6 +226,7 @@ python3 ${SKILL_DIR}/gacha.py [次数]
 - **OpenClaw Agent**：通过 SOUL.md 注入
 - **其他 Agent**：支持 SKILL.md 格式的框架均可使用
 
-生图引擎依赖 Node.js + bun。不支持时自动降级为输出提示词文本。
+本 Skill 自身不包含任何网络请求或文件发送代码。
+头像生图能力通过可选依赖 `baoyu-image-gen` skill 提供。
 
 > 注：README.md / README.zh.md 是给人类用户看的安装说明，不影响 Skill 运行。
