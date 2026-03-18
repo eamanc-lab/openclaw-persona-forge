@@ -6,8 +6,9 @@ description: |-
   如已安装 baoyu-image-gen skill，可自动生成统一风格头像图片。
   当用户需要创建、设计或定制 OpenClaw 龙虾角色人设时使用。
   不适用于：微调已有 SOUL.md、非 OpenClaw 平台的角色设计、纯工具型无性格 Agent。
-  触发词：龙虾人设、OpenClaw 人设、养虾人设、龙虾角色、龙虾定位、
-  lobster persona、抽卡、随机龙虾、龙虾 SOUL、龙虾灵魂、gacha。
+  触发词：龙虾人设、虾设、OpenClaw 人设、养虾人设、龙虾角色、龙虾定位、
+  龙虾剧本杀角色、龙虾游戏角色、龙虾 NPC、龙虾性格、龙虾背景故事、
+  lobster persona、lobster character、抽卡、随机龙虾、龙虾 SOUL、龙虾灵魂、gacha。
 license: MIT
 metadata:
   author: eamanc
