@@ -1,17 +1,15 @@
 ---
 name: openclaw-user-profiler
 description: |-
-  Build a user.md profile for your OpenClaw Agent so your lobster actually
-  knows who it's working with. Two modes: Profile (conversational intake →
-  writes user.md) and Recommend (matches the user's role to relevant Claude
-  Code Skills). Use when a user wants their OpenClaw Agent to learn about them,
-  update personal info, or discover Skills suited to their role.
-  Not for: editing SOUL.md (use the forge), installing Skills (user action),
-  or general-purpose Q&A.
+  Get to know the user through conversation and generate a user.md for their
+  OpenClaw Agent. Then recommend Claude Code Skills matched to the user's role.
+  Two modes: Profile (chat → user.md) and Recommend (role → skill list).
+  Use when a user wants their lobster to learn about them, update their profile,
+  or find Skills suited to their role.
+  Not for: editing SOUL.md (use the forge) or general-purpose Q&A.
   Triggers: know me, get to know me, write user.md, update my profile,
-  user profile, profile me, set up user, who am I,
-  recommend skills, skills for my role, what skills should I use,
-  I'm an engineer, I'm a PM, skill recommendations,
+  profile me, set up user, who am I, recommend skills, skills for my role,
+  what skills should I use, I'm an engineer, I'm a PM,
   了解我, 认识我, 推荐 skill, 用户画像。
 license: MIT
 homepage: https://github.com/eamanc-lab/openclaw-persona-forge
@@ -47,7 +45,6 @@ A good user.md = **a handful of anchor fields** (Name / Role / Stack / Style / T
 ## When Not to Use This Skill
 
 - Editing the lobster's soul or personality → use openclaw-persona-forge or openclaw-soul-forge
-- Installing or removing Skills → user handles that directly
 - General conversation unrelated to user profiling → this Skill isn't needed
 
 ---
