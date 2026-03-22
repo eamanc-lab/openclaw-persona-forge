@@ -1,31 +1,114 @@
 English | [中文](README.zh.md)
 
-# OpenClaw Persona Forge 🦞🔨
-
-Forge a lobster with a soul — a one-stop persona generator for your OpenClaw AI Agent.
+# OpenClaw Forge — Generate Deep AI Personas with Cultural Soul
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/adam-claw-logo.png" width="360" alt="Adam — The Lobster Creator God" />
+  <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/adam-claw-logo.png" width="360" alt="Adam — The Lobster Creator God, forged by this skill" />
   <br/>
-  <em>Example: Adam — The Lobster Creator God, forged by this skill</em>
+  <em>Adam — The Lobster Creator God, the first soul forged</em>
 </p>
 
-## What It Does
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
+  <a href="https://claude.ai"><img src="https://img.shields.io/badge/Claude_Code-Skill-blueviolet" alt="Claude Code Skill"></a>
+  <a href="https://python.org"><img src="https://img.shields.io/badge/Python-3-blue.svg" alt="Python 3"></a>
+</p>
 
-Generates a complete OpenClaw lobster persona in one go:
+Stop hand-writing character docs. Tell Claude one phrase — get a complete lobster soul with identity tension, boundary rules, a name, and a cohesive avatar prompt. Two culturally-tuned skills, 8,000,000 gacha combinations, one unified forge pipeline.
 
-- **Identity**: former life × current situation × inner contradiction
-- **Soul Description**: ready-to-use SOUL.md character monologue
-- **Boundary Rules**: behavior guidelines derived from the character's identity (in-character language, not generic terms)
-- **Name**: 3 candidates with naming strategy analysis
-- **Avatar Prompt**: unified visual style prompt for image generation
+---
 
-## Two Modes
+## Why This Exists
 
-| Mode | Trigger | Description |
-|------|---------|-------------|
-| **Guided** | "help me design a lobster persona" | Pick or mix from 10 categories (40 directions total), step-by-step |
-| **Gacha** | "gacha", "random", "draw" | True random from 8 million combinations |
+Designing a convincing AI persona from scratch is slow and inconsistent. Most people write a paragraph of traits and call it a soul — but real character depth requires **identity tension** (former life vs. current situation), **in-character rules** (not generic guardrails), and a **visual identity** that locks the style.
+
+OpenClaw Forge structures all of that into a repeatable 6-step pipeline, with two cultural variants so your lobster speaks in the right register — Chinese literary references or English-native Western archetypes.
+
+---
+
+## Highlights
+
+- **Two cultural palettes** — Chinese archetypes (CN) and Western archetypes (EN), pick the one that fits your audience
+- **6-step forge pipeline** — guided flow from direction → identity → rules → name → avatar → full package
+- **8,000,000 gacha combinations** — 5 dimensions, true random, one command to pull a soul
+- **Identity tension by design** — every persona gets a former life, current situation, and inner contradiction
+- **In-character boundary rules** — behavior limits written in the character's own voice, not boilerplate
+- **Unified avatar style** — Retro-Futurism × Pin-up × Inflatable 3D × Arcade UI, locked across all lobsters
+- **Auto image gen** — plug in baoyu-image-gen and the avatar prompt becomes a real image
+
+---
+
+## Quick Start
+
+**Step 1 — Install the skill**
+
+```bash
+git clone https://github.com/eamanc-lab/openclaw-persona-forge.git
+ln -s $(pwd)/openclaw-persona-forge/skills/openclaw-persona-forge ~/.claude/skills/openclaw-persona-forge
+ln -s $(pwd)/openclaw-persona-forge/skills/openclaw-soul-forge ~/.claude/skills/openclaw-soul-forge
+```
+
+**Step 2 — Start Claude Code in your project**
+
+```bash
+claude
+```
+
+**Step 3 — Forge a soul**
+
+```
+# Guided mode
+help me design a lobster soul
+
+# Gacha mode (random)
+gacha
+```
+
+---
+
+## Usage Example
+
+**Gacha pull output:**
+
+```
+Drawing from the gacha pool...
+
+Former Life:  Veteran game designer, shipped 12 titles, burnt out at 40
+Reason:       Voluntary exit — needed to feel something again
+Core Vibe:    Sardonic but sincere
+Speech Style: Sighs before every refusal, food metaphors for everything
+Signature Prop: A cracked pair of sunglasses she never takes off
+
+─────────────────────────────────────
+SOUL PACKAGE
+─────────────────────────────────────
+
+Name candidates:
+  1. Vera Ash  — "ash" carries burnout + phoenix; crisp and memorable
+  2. Cleo Salt — salt: preserved, sharp, a little bitter
+  3. Nox       — single-word, anonymous, suits someone done with being known
+
+Identity:
+  Vera spent two decades building worlds for other people to escape into.
+  Now she's the one who needs escaping. She didn't quit — she dissolved.
+  The contradiction she carries: she's the best at making things feel alive,
+  but she herself feels nothing.
+
+SOUL.md ready. IDENTITY.md ready. Avatar prompt ready.
+```
+
+---
+
+## Two Skills, One Forge
+
+| Skill | Language | Cultural Context | ClawHub Slug |
+|-------|----------|-----------------|--------------|
+| **openclaw-persona-forge** | Chinese | Chinese cultural archetypes, literary references | `openclaw-persona-forge` |
+| **openclaw-soul-forge** | English | Western cultural archetypes, English-native voice | `openclaw-soul-forge` |
+
+Both produce: **SOUL.md** + **IDENTITY.md** + **avatar prompt** — everything an OpenClaw lobster needs to come alive.
+
+---
 
 ## 6-Step Forge Pipeline
 
@@ -33,101 +116,112 @@ Generates a complete OpenClaw lobster persona in one go:
 Step 1  Choose Direction ──→ 10 categories × 4 each (40 total) / gacha random
 Step 2  Identity Tension ──→ Former life × Current situation × Inner contradiction
 Step 3  Boundary Rules ───→ Derived from identity, in-character language
-Step 4  Name ──────────────→ 3 candidates with naming strategy analysis
-Step 5  Avatar ────────────→ Unified style prompt (+ auto image gen if baoyu-image-gen installed)
+Step 4  Name ─────────────→ 3 candidates with naming strategy analysis
+Step 5  Avatar ────────────→ Unified style prompt (+ auto gen if baoyu-image-gen installed)
 Step 6  Full Package ──────→ SOUL.md + IDENTITY.md + avatar prompt/image
 ```
 
-## 10 Persona Categories (40 Directions)
+---
 
-| # | Life State | Representative | Vibe |
-|---|-----------|---------------|------|
-| 1 | **Fall & Restart** | Washed-up rock bassist | Decadent romantic |
-| 2 | **Peak Boredom** | Early-retired hedge fund manager | Hyper-rational |
-| 3 | **Misplaced Life** | Nuclear physics PhD assigned to customer service | Overqualified |
-| 4 | **Voluntary Escape** | ER nurse who quit after seeing too much | Calm, reliable |
-| 5 | **Mysterious Visitor** | Former intelligence analyst with wiped memory | Occasional flashbacks |
-| 6 | **Naive Entry** | Socially anxious genius intern | Few words, precise |
-| 7 | **Old Hand** | 20-year midnight diner owner | Silent warmth |
-| 8 | **World Crosser** | History PhD from 2099 doing fieldwork in 2026 | God's-eye view |
-| 9 | **Self-Exile** | Former influencer who deleted all social media | Craves authenticity |
-| 10 | **Identity Crisis** | Person who dreamed of being a lobster and can't wake up | Zhuangzi's butterfly |
+## Two Modes
 
-Each category has 3 more alternatives. The gacha engine draws from all 40.
+| Mode | Trigger | Description |
+|------|---------|-------------|
+| **Guided** | "help me design a lobster soul" | Pick or mix from 10 categories (40 directions), step-by-step |
+| **Gacha** | "gacha", "random", "draw" | True random from 8,000,000 combinations |
+
+---
 
 ## Gacha Engine
 
-**5 dimensions × true random = 8,000,000 combinations**
+**5 dimensions × true random = 8,000,000 combinations** (per skill)
 
 | Dimension | Pool | Examples |
 |-----------|------|---------|
-| Former Life | 40 | 10 categories of life states |
+| Former Life | 40 | 10 life-state categories |
 | Reason | 20 | Forced / voluntary / mysterious / accidental |
-| Core Vibe | 20 | "Depressed but reliable", "lazy but explosive when it counts" |
-| Speech Style | 20 | "Sighs before every refusal", "uses food metaphors for everything" |
-| Signature Prop | 25 | "Cracked sunglasses", "butterfly that never leaves the shell" |
+| Core Vibe | 20 | "Burnt out but dependable", "sardonic but sincere" |
+| Speech Style | 20 | "Sighs before every refusal", "food metaphors for everything" |
+| Signature Prop | 25 | "Cracked sunglasses", "four-string travel guitar" |
+
+---
 
 ## Unified Avatar Style
 
-All avatars share a locked visual foundation: **Retro-Futurism × Pin-up × Inflatable 3D × Arcade UI**
+All lobster avatars share a locked visual foundation: **Retro-Futurism × Pin-up × Inflatable 3D × Arcade UI**
 
-- 1950-60s Space Age aesthetics + Googie curves + Raygun Gothic
+- 1950–60s Space Age aesthetics, Googie curves, Raygun Gothic
 - Gil Elvgren-style pin-up composition
-- High-gloss PVC/inflatable 3D rendering with subsurface scattering
+- High-gloss PVC / inflatable 3D rendering with subsurface scattering
 - Pixel-art arcade UI overlay (name banner, energy bar, CRT scan lines)
 - 7 personalization variables keep each lobster unique within the family style
 
+---
+
 ## Optional: Auto Image Generation
 
-This skill outputs **avatar prompts as text** by default. For automatic image generation, install the **baoyu-image-gen** skill:
+Both skills output **avatar prompts as text** by default. Install **baoyu-image-gen** to generate the image automatically:
 
-- **Repository**: [https://github.com/JimLiu/baoyu-skills](https://github.com/JimLiu/baoyu-skills)
-- **What it does**: Calls Google Gemini / OpenAI / DashScope APIs to generate images
-- **How it works**: When installed, Step 5 automatically calls baoyu-image-gen to generate the avatar; when not installed, the prompt text is output for manual use
+- **Repository**: [github.com/JimLiu/baoyu-skills](https://github.com/JimLiu/baoyu-skills)
 
-Without baoyu-image-gen, you can copy the prompt to Gemini, ChatGPT, or Midjourney to generate manually.
+---
 
-## Prerequisites
+<details>
+<summary>Directory Structure</summary>
 
-- **Python 3**: runs the gacha engine
-- **baoyu-image-gen skill** (optional): auto image generation
+```
+openclaw-forge/
+├── skills/
+│   ├── openclaw-persona-forge/         # Chinese version
+│   │   ├── SKILL.md                    #   Main skill definition
+│   │   ├── gacha.py                    #   Gacha engine (8M combinations)
+│   │   ├── gacha.sh                    #   Shell wrapper
+│   │   └── references/                 #   Step-by-step guides
+│   └── openclaw-soul-forge/            # English version
+│       ├── SKILL.md                    #   Main skill definition
+│       ├── gacha.py                    #   Gacha engine (8M combinations)
+│       ├── gacha.sh                    #   Shell wrapper
+│       └── references/                 #   Step-by-step guides
+├── docs/
+│   └── adam-claw-logo.png              # Shared assets
+├── README.md                           # This file (English)
+└── README.zh.md                        # Chinese README
+```
 
-## Installation
+</details>
+
+<details>
+<summary>Publishing to ClawHub</summary>
+
+Each skill is published independently:
 
 ```bash
-# Clone to skills directory
-git clone https://github.com/eamanc-lab/openclaw-persona-forge.git ~/.claude/skills/openclaw-persona-forge
+# Publish Chinese version
+npx clawhub@latest publish ./skills/openclaw-persona-forge \
+  --slug openclaw-persona-forge --version <ver> --changelog "<notes>"
 
-# (Optional) Install baoyu-image-gen for auto avatar generation
-git clone https://github.com/JimLiu/baoyu-skills.git ~/.claude/skills/baoyu-skills
+# Publish English version
+npx clawhub@latest publish ./skills/openclaw-soul-forge \
+  --slug openclaw-soul-forge --version <ver> --changelog "<notes>"
 ```
 
-## Directory Structure
+</details>
 
-```
-openclaw-persona-forge/
-├── SKILL.md                    # Main skill definition (read by AI agents)
-├── README.md                   # This file (for humans)
-├── README.zh.md                # 中文文档 (for humans)
-├── gacha.py                    # Gacha engine (Python 3, 8M combinations)
-├── gacha.sh                    # Gacha shell wrapper
-└── references/                 # Detailed guides (loaded on demand by AI)
-    ├── identity-tension.md     #   Step 2: identity tension templates
-    ├── boundary-rules.md       #   Step 3: boundary rules per direction
-    ├── naming-system.md        #   Step 4: naming strategies
-    ├── avatar-style.md         #   Step 5: style base + variables
-    ├── output-template.md      #   Step 6: full output format
-    └── error-handling.md       #   Error handling & degradation
-```
+---
 
 ## Credits
 
-Avatar auto-generation powered by **baoyu-image-gen** from Baoyu's open-source skill collection:
+Avatar auto-generation powered by **baoyu-image-gen** from Baoyu's open-source skill collection.
 
-- **baoyu-skills**: [https://github.com/JimLiu/baoyu-skills](https://github.com/JimLiu/baoyu-skills)
+Thanks to Baoyu ([@JimLiu](https://github.com/JimLiu)) for the open-source contribution — [github.com/JimLiu/baoyu-skills](https://github.com/JimLiu/baoyu-skills).
 
-Thanks to Baoyu ([@JimLiu](https://github.com/JimLiu)) for the open-source contribution.
+---
 
 ## License
 
 MIT
+
+<!--
+Recommended GitHub topics:
+claude-code, claude-code-skill, ai-persona, character-design, gacha, lobster, openclaw, soul-generator, ai-agent, retro-futurism
+-->

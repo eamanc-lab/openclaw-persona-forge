@@ -1,0 +1,39 @@
+# OpenClaw Forge
+
+> Two Claude Code skills that generate complete AI personas (SOUL.md + IDENTITY.md + avatar prompt) through a structured 6-step forge pipeline. Two cultural variants: Chinese archetypes and English/Western archetypes. Includes a gacha engine with 8,000,000 random combinations across 5 dimensions.
+
+## Skills
+
+- `openclaw-persona-forge` — Chinese cultural variant. Generates lobster personas using Chinese literary references and cultural archetypes. Produces SOUL.md, IDENTITY.md, and a unified avatar prompt in Retro-Futurism × Pin-up × Inflatable 3D style.
+- `openclaw-soul-forge` — English cultural variant. Same pipeline, Western cultural archetypes, English-native voice.
+
+## How to Use
+
+Install by symlinking the skill directory into `~/.claude/skills/`, then invoke inside Claude Code:
+
+- "help me design a lobster soul" — starts guided mode (10 categories × 4 directions each)
+- "gacha" / "random" / "draw" — pulls a random soul from 8,000,000 combinations
+
+## Output Per Run
+
+- SOUL.md — character monologue, identity tension (former life × current situation × inner contradiction)
+- IDENTITY.md — structured identity card
+- Avatar prompt — Retro-Futurism × Pin-up × Inflatable 3D × Arcade UI visual style, ready for image generation
+- Name candidates — 3 options with naming strategy analysis
+- Boundary rules — behavior guidelines written in the character's own voice
+
+## Gacha Dimensions
+
+5 dimensions, true random: Former Life (40 options), Reason for becoming a lobster (20), Core Vibe (20), Speech Style (20), Signature Prop (25).
+
+## Optional Integration
+
+Install `baoyu-image-gen` (github.com/JimLiu/baoyu-skills) to auto-generate the avatar image from the prompt.
+
+## Repository
+
+https://github.com/eamanc-lab/openclaw-persona-forge
+
+## License
+
+MIT
