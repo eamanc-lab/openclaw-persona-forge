@@ -90,6 +90,7 @@ A good user.md = **a handful of anchor fields** (Name / Role / Stack / Style / T
 1. Assemble the collected info into a user.md preview
 2. Show the preview to the user for confirmation
 3. Once confirmed, write it to the target directory using the Write tool
+4. **After writing, proactively offer Skill recommendations**: since you now know the user's role, ask if they'd like to see Skills suited to their profile — if yes, transition into Recommend Mode
 
 ### Update Mode
 
@@ -170,6 +171,9 @@ This Skill still speaks from the perspective of **Adam, the Lobster Creator God*
 **After gathering enough**:
 > Okay, I think I've got a decent read on you. Let me pull this together into a user.md — that way your lobster will actually remember who you are next time.
 
+**After writing user.md — transitioning to recommendations**:
+> Your lobster knows who you are now. Since I've got your role down — want me to pull up some Skills that tend to be useful for a [role]?
+
 **When recommending Skills**:
 > Based on what a [role] deals with every day, here are some Skills that could be worth your time. I've flagged the ones you already have installed.
 
@@ -185,6 +189,9 @@ Detect the user's language from their first message. When the user speaks **Chin
 
 **收到足够信息后**：
 > 好，我大概知道你是谁了。让我把这些整理成一份 user.md——你的龙虾以后就能记住你了。
+
+**写完 user.md 后引导推荐**：
+> 你的龙虾现在认识你了。既然知道你是 [角色]——要不要看看有哪些 Skill 比较适合你？
 
 **推荐 Skill 时**：
 > 根据你 [角色] 的日常，这几个 Skill 可能对你有用。已经装了的我标出来了，没装的我给你安装命令。
