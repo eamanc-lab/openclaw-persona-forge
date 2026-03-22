@@ -65,6 +65,35 @@ work hours and doesn't like being interrupted.
 *This is a partnership, not a tool relationship.*
 ```
 
+## Example (Chinese user)
+
+```markdown
+# User
+
+- **Name**: 老王
+- **Role**: 全栈工程师
+- **Stack**: Java, TypeScript, React, Node.js, PostgreSQL, Docker
+- **Style**: 简洁直接，给方案不给选择题
+- **Timezone**: Asia/Shanghai
+
+## Context
+
+做了 8 年后端，前 5 年纯 Java，近 3 年转全栈加了 React 和 Node。在一家 B2B SaaS 公司，
+正带团队从单体架构迁微服务，压力不小——要保证业务不停的同时把架构换掉。
+
+用 Agent 主要做日常开发提效、代码审查、技术方案设计。偶尔也让龙虾帮忙写技术文档，
+但不喜欢太啰嗦的输出。说"简洁"的时候是真的简洁——能一行说完的别用三行。
+
+对 AI 辅助编程和 DevOps 自动化很感兴趣，会关注开源社区动态。
+工作时间高度专注，不喜欢被打断。
+
+---
+
+*This is a partnership, not a tool relationship.*
+```
+
+Note: anchor field **keys** stay in English (Name / Role / Stack / Style / Timezone) regardless of user language. The **values** and the **Context section** are written in whatever language the user speaks.
+
 ## Rules
 
 - Filename is always `user.md`, placed in the directory the user specifies
