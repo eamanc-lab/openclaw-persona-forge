@@ -1,16 +1,16 @@
 ---
 name: openclaw-user-profiler
 description: |-
-  Get to know the user through conversation and generate a user.md for their
-  OpenClaw Agent. Then recommend Claude Code Skills matched to the user's role.
-  Two modes: Profile (chat → user.md) and Recommend (role → skill list).
+  Two things: (1) Build a user.md through conversation so your OpenClaw lobster
+  knows who it's working with. (2) Recommend Claude Code Skills based on the
+  user's role — 42 roles across 11 categories, three-level inheritance model.
+  Profile mode: chat → user.md. Recommend mode: role → curated skill list.
   Use when a user wants their lobster to learn about them, update their profile,
-  or find Skills suited to their role.
+  or discover which Skills fit their role.
   Not for: editing SOUL.md (use the forge) or general-purpose Q&A.
   Triggers: know me, get to know me, write user.md, update my profile,
-  profile me, set up user, who am I, recommend skills, skills for my role,
-  what skills should I use, I'm an engineer, I'm a PM,
-  了解我, 认识我, 推荐 skill, 用户画像。
+  profile me, recommend skills, skills for my role, what skills should I use,
+  I'm an engineer, I'm a PM, 了解我, 认识我, 推荐 skill, 用户画像。
 license: MIT
 homepage: https://github.com/eamanc-lab/openclaw-persona-forge
 metadata:

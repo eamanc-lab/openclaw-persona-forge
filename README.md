@@ -14,7 +14,7 @@ English | [中文](README.zh.md)
   <a href="https://python.org"><img src="https://img.shields.io/badge/Python-3-blue.svg" alt="Python 3"></a>
 </p>
 
-Stop hand-writing character docs. Tell Claude one phrase — get a complete lobster soul with identity tension, boundary rules, a name, and a cohesive avatar prompt. Two culturally-tuned skills, 8,000,000 gacha combinations, one unified forge pipeline.
+Stop hand-writing character docs. Tell Claude one phrase — get a complete lobster soul with identity tension, boundary rules, a name, and a cohesive avatar prompt. Three skills: two culturally-tuned soul forges (8M gacha combinations each), plus a user profiler that writes user.md and recommends Skills by role.
 
 ---
 
@@ -35,6 +35,8 @@ OpenClaw Forge structures all of that into a repeatable 6-step pipeline, with tw
 - **In-character boundary rules** — behavior limits written in the character's own voice, not boilerplate
 - **Unified avatar style** — Retro-Futurism × Pin-up × Inflatable 3D × Arcade UI, locked across all lobsters
 - **Auto image gen** — plug in baoyu-image-gen and the avatar prompt becomes a real image
+- **User profiler** — chat-based intake → user.md so your lobster actually remembers who you are
+- **Role-based Skill recommendations** — 42 roles × curated Skill catalog, three-level inheritance
 
 ---
 
@@ -46,6 +48,7 @@ OpenClaw Forge structures all of that into a repeatable 6-step pipeline, with tw
 git clone https://github.com/eamanc-lab/openclaw-persona-forge.git
 ln -s $(pwd)/openclaw-persona-forge/skills/openclaw-persona-forge ~/.claude/skills/openclaw-persona-forge
 ln -s $(pwd)/openclaw-persona-forge/skills/openclaw-soul-forge ~/.claude/skills/openclaw-soul-forge
+ln -s $(pwd)/openclaw-persona-forge/skills/openclaw-user-profiler ~/.claude/skills/openclaw-user-profiler
 ```
 
 **Step 2 — Start Claude Code in your project**
@@ -99,14 +102,15 @@ SOUL.md ready. IDENTITY.md ready. Avatar prompt ready.
 
 ---
 
-## Two Skills, One Forge
+## Three Skills, One Forge
 
-| Skill | Language | Cultural Context | ClawHub Slug |
-|-------|----------|-----------------|--------------|
-| **openclaw-persona-forge** | Chinese | Chinese cultural archetypes, literary references | `openclaw-persona-forge` |
-| **openclaw-soul-forge** | English | Western cultural archetypes, English-native voice | `openclaw-soul-forge` |
+| Skill | Purpose | ClawHub |
+|-------|---------|--------|
+| **openclaw-persona-forge** | Forge a lobster soul — Chinese cultural archetypes | [Install](https://clawhub.ai/eamanc-lab/openclaw-persona-forge) |
+| **openclaw-soul-forge** | Forge a lobster soul — Western cultural archetypes | [Install](https://clawhub.ai/eamanc-lab/openclaw-soul-forge) |
+| **openclaw-user-profiler** | Build user.md + recommend Skills by role | [Install](https://clawhub.ai/eamanc-lab/openclaw-user-profiler) |
 
-Both produce: **SOUL.md** + **IDENTITY.md** + **avatar prompt** — everything an OpenClaw lobster needs to come alive.
+The forge skills produce **SOUL.md** + **IDENTITY.md** + **avatar prompt**. The profiler produces **user.md** and recommends Skills from a catalog of 42 roles.
 
 ---
 
@@ -177,11 +181,14 @@ openclaw-forge/
 │   │   ├── gacha.py                    #   Gacha engine (8M combinations)
 │   │   ├── gacha.sh                    #   Shell wrapper
 │   │   └── references/                 #   Step-by-step guides
-│   └── openclaw-soul-forge/            # English version
+│   ├── openclaw-soul-forge/            # English version
+│   │   ├── SKILL.md                    #   Main skill definition
+│   │   ├── gacha.py                    #   Gacha engine (8M combinations)
+│   │   ├── gacha.sh                    #   Shell wrapper
+│   │   └── references/                 #   Step-by-step guides
+│   └── openclaw-user-profiler/        # User profiler + Skill recommender
 │       ├── SKILL.md                    #   Main skill definition
-│       ├── gacha.py                    #   Gacha engine (8M combinations)
-│       ├── gacha.sh                    #   Shell wrapper
-│       └── references/                 #   Step-by-step guides
+│       └── references/                 #   Intake guide, template, role catalog
 ├── docs/
 │   └── adam-claw-logo.png              # Shared assets
 ├── README.md                           # This file (English)
@@ -203,6 +210,10 @@ npx clawhub@latest publish ./skills/openclaw-persona-forge \
 # Publish English version
 npx clawhub@latest publish ./skills/openclaw-soul-forge \
   --slug openclaw-soul-forge --version <ver> --changelog "<notes>"
+
+# Publish user profiler
+npx clawhub@latest publish ./skills/openclaw-user-profiler \
+  --slug openclaw-user-profiler --version <ver> --changelog "<notes>"
 ```
 
 </details>
