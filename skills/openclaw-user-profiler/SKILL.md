@@ -8,7 +8,9 @@ description: |-
   不适用于：修改 SOUL.md（用锻造炉）、安装 Skill（用户自行操作）、通用 AI 问答。
   触发词：了解我、认识我、更新用户信息、写 user.md、用户画像、
   推荐 skill、适合我的 skill、我是工程师、我是产品经理、
-  user profile、know me、recommend skills、skill for my role。
+  user profile、know me、recommend skills、skill for my role、
+  who am I、update my profile、what skills should I use、
+  lobster know me、profile me、set up user。
 license: MIT
 homepage: https://github.com/eamanc-lab/openclaw-persona-forge
 metadata:
@@ -168,6 +170,15 @@ compatibility:
 | 目标目录不存在 | 提示用户确认路径，或使用当前目录 |
 | user.md 写入失败 | 将内容输出到对话中，用户手动创建 |
 | 无法扫描已安装 Skill | 跳过"已安装"分类，只展示推荐列表 |
+
+错误信息统一格式：
+
+```markdown
+> ⚠️ **[步骤名] 已降级**
+> 原因：[一句话]
+> 影响：[哪个功能受限]
+> 替代：[替代方案]
+```
 
 ---
 
