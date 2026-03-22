@@ -453,6 +453,7 @@
 | seo | 📦 addyosmani/web-quality-skills | SEO 优化（4.2K 安装） |
 | seo-optimizer | 📦 davila7/claude-code-templates | SEO 优化器（530 安装） |
 | doc-coauthoring | 🅰️ Anthropic 官方 | A/B 测试文档 |
+| n8n-workflow-automation | 📦 aaaaqwq/claude-code-skills | 增长自动化工作流（43 安装） |
 
 ---
 
@@ -468,6 +469,7 @@
 | xlsx | 🅰️ Anthropic 官方 | 关键词和排名数据分析 |
 | doc-coauthoring | 🅰️ Anthropic 官方 | SEO 内容优化 |
 | last30days | 📦 trailofbits/skills-curated | 竞品关键词和用户意图分析 |
+| brave-search | 📦 steipete/agent-scripts | 隐私友好的搜索替代，关键词调研（685 安装） |
 
 ---
 
@@ -517,6 +519,7 @@
 | elite-powerpoint-designer | 📦 willem4130/claude-code-skills | 投资人/董事会 PPT（1.3K 安装） |
 | news-summary | 📦 sundial-org/awesome-openclaw-skills | 行业趋势追踪 |
 | last30days | 📦 trailofbits/skills-curated | 市场洞察 |
+| alphaear-stock | 📦 rkiding/awesome-finance-skills | 股票和市场数据分析（284 安装） |
 
 ---
 
@@ -534,6 +537,7 @@
 | frontend-design | 🅰️ Anthropic 官方 | 落地页和产品 UI |
 | seo | 📦 addyosmani/web-quality-skills | 产品 SEO（4.2K 安装） |
 | product-manager | 📦 aj-geddes/claude-code-bmad-skills | 一人当 PM（115 安装） |
+| stripe-payments | 📦 claude-office-skills/skills | 支付集成——独立开发者 SaaS 刚需（219 安装） |
 
 ---
 
@@ -550,6 +554,7 @@
 | xlsx | 🅰️ Anthropic 官方 | 数据分析 |
 | elite-powerpoint-designer | 📦 willem4130/claude-code-skills | 高端 PPT（1.3K 安装） |
 | last30days | 📦 trailofbits/skills-curated | 行业调研 |
+| email-marketing | 📦 claude-office-skills/skills | 客户沟通邮件（250 安装） |
 
 ---
 
@@ -584,6 +589,7 @@
 | meeting-minutes | 📦 github/awesome-copilot | 面试记录、团队会议纪要 |
 | the-fool | 📦 jeffallan/claude-skills | 组织决策的多角度分析 |
 | x-research | 📦 rohunvora/x-research-skill | 人才市场趋势搜索 |
+| email-marketing | 📦 claude-office-skills/skills | 招聘邮件和候选人沟通（250 安装） |
 
 ---
 
@@ -614,6 +620,7 @@
 | pptx | 🅰️ Anthropic 官方 | 财务汇报演示 |
 | the-fool | 📦 jeffallan/claude-skills | 投资决策分析 |
 | planner | 📦 am-will/codex-skills | 预算规划 |
+| alphaear-stock | 📦 rkiding/awesome-finance-skills | 股票和财务数据分析（284 安装） |
 
 ---
 
@@ -645,6 +652,8 @@
 | doc-coauthoring | 🅰️ Anthropic 官方 | 论文协作 |
 | xlsx | 🅰️ Anthropic 官方 | 研究数据分析 |
 | news-summary | 📦 sundial-org/awesome-openclaw-skills | 领域资讯追踪 |
+| brave-search | 📦 steipete/agent-scripts | 隐私友好的学术搜索（685 安装） |
+| notion-mcp | 📦 dokhacgiakhoa/antigravity-ide | 研究笔记和知识库管理 |
 | baoyu-youtube-transcript | 📦 jimliu/baoyu-skills | 学术讲座/会议视频下载 |
 
 ---
@@ -694,6 +703,9 @@
 | x-twitter-growth | 📦 alirezarezvani/claude-skills | 个人品牌建设 |
 | internal-comms | 🅰️ Anthropic 官方 | 客户沟通模板 |
 | frontend-design | 🅰️ Anthropic 官方 | 作品集/个人站 |
+| trello | 📦 membranedev/application-skills | 项目看板管理（36 安装） |
+| stripe-payments | 📦 claude-office-skills/skills | 支付集成（219 安装） |
+| n8n-workflow-automation | 📦 aaaaqwq/claude-code-skills | 自动化工作流（43 安装） |
 
 ---
 
