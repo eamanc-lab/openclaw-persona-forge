@@ -3,9 +3,22 @@
 # 锻造一只有灵魂的龙虾 —— OpenClaw 龙虾灵魂锻造炉 🦞🔨
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/adam-claw-logo.png" width="360" alt="亚当（Adam）—— 龙虾族创世神" />
+  <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/adam-claw-logo.png" width="280" alt="亚当（Adam）—— 龙虾族创世神" />
   <br/>
-  <em>亚当（Adam）—— 龙虾族创世神，第一只被锻造的灵魂</em>
+  <strong>Adam</strong> —— 龙虾族创世神，第一只被锻造的灵魂
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/everup.jpeg" width="150" alt="Everup" />
+  <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/signal.png" width="150" alt="Signal" />
+  <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/syn.jpeg" width="150" alt="Syn" />
+  <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/unseal.jpeg" width="150" alt="Unseal" />
+  <br/>
+  <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/guipu.jpeg" width="150" alt="归朴" />
+  <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/qianliwuxian.png" width="150" alt="千里无线" />
+  <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/wenheng.jpeg" width="150" alt="文衡" />
+  <br/>
+  <em>更多被锻造的灵魂 —— 每一只都独一无二，共享同一套复古未来主义基因</em>
 </p>
 
 <p align="center">

@@ -3,9 +3,22 @@ English | [中文](README.zh.md)
 # OpenClaw Forge — Generate Deep AI Personas with Cultural Soul
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/adam-claw-logo.png" width="360" alt="Adam — The Lobster Creator God, forged by this skill" />
+  <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/adam-claw-logo.png" width="280" alt="Adam — The Lobster Creator God" />
   <br/>
-  <em>Adam — The Lobster Creator God, the first soul forged</em>
+  <strong>Adam</strong> — The Lobster Creator God, the first soul forged
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/everup.jpeg" width="150" alt="Everup" />
+  <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/signal.png" width="150" alt="Signal" />
+  <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/syn.jpeg" width="150" alt="Syn" />
+  <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/unseal.jpeg" width="150" alt="Unseal" />
+  <br/>
+  <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/guipu.jpeg" width="150" alt="Guipu" />
+  <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/qianliwuxian.png" width="150" alt="Qian Li Wu Xian" />
+  <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/wenheng.jpeg" width="150" alt="Wenheng" />
+  <br/>
+  <em>More souls forged by this skill — each one unique, all sharing the same retro-futuristic DNA</em>
 </p>
 
 <p align="center">
