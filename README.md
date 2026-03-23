@@ -10,12 +10,12 @@ English | [中文](README.zh.md)
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/everup.jpeg" width="150" alt="Everup" />
-  <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/signal.png" width="150" alt="Signal" />
+  <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/signal.jpeg" width="150" alt="Signal" />
   <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/syn.jpeg" width="150" alt="Syn" />
   <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/unseal.jpeg" width="150" alt="Unseal" />
   <br/>
   <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/guipu.jpeg" width="150" alt="Guipu" />
-  <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/qianliwuxian.png" width="150" alt="Qian Li Wu Xian" />
+  <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/qianliwuxian.jpeg" width="150" alt="Qian Li Wu Xian" />
   <img src="https://raw.githubusercontent.com/eamanc-lab/openclaw-persona-forge/main/docs/wenheng.jpeg" width="150" alt="Wenheng" />
   <br/>
   <em>More souls forged by this skill — each one unique, all sharing the same retro-futuristic DNA</em>
