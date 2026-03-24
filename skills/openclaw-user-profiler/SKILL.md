@@ -15,7 +15,7 @@ license: MIT
 homepage: https://github.com/eamanc-lab/openclaw-persona-forge
 metadata:
   author: eamanc
-  version: 2.2.0
+  version: 2.3.0
 compatibility:
   platforms:
     - claude-code
@@ -25,12 +25,6 @@ compatibility:
 # OpenClaw User Profiler 🦞🔍
 
 > Your lobster wants to know you — not interrogate you, just get acquainted.
-
-## Skill Directory Convention
-
-**Agent Execution**:
-1. Determine this SKILL.md file's directory path as `SKILL_DIR`
-2. Replace all `${SKILL_DIR}` in this document with the actual path
 
 ## Core Philosophy
 
@@ -121,7 +115,7 @@ Covers 11 categories and 42 professional roles, each recommendation tagged with 
 
 1. Match the user's role to the closest entry in the catalog
 2. Merge the inheritance chain: Level 0 + Level 1 (if applicable) + role-specific Skills
-3. Scan `~/.claude/skills/` to check which Skills are already installed
+3. Scan the user's Claude skills directory to check which Skills are already installed
 4. Split into "Already installed" and "Recommended" groups
 
 ### Step 4: Present recommendations
