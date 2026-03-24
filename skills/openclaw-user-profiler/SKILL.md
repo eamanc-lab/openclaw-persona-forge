@@ -15,7 +15,7 @@ license: MIT
 homepage: https://github.com/eamanc-lab/openclaw-persona-forge
 metadata:
   author: eamanc
-  version: 2.3.0
+  version: 2.3.1
 compatibility:
   platforms:
     - claude-code
